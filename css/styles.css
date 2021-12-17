@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(255, 232, 235);
 }
@@ -10,3 +14,32 @@ body {
   text-align: center;
   width: 25%;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: flex-end;
+  padding: 0 4px;
+}
+
+@media only screen and (max-width: 800px) {
+  img {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+img {
+  flex-basis: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  margin-top: 8px;
+}
+
